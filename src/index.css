@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* Neon Glow Effects */
+.neon-green {
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+  }
+  
+  .neon-red {
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000;
+  }
+  
+  /* .neon-blue {
+    box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 40px #00bfff;
+  } */
+  
+  .neon-yellow {
+    box-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 40px #ffff00;
+  }
+  
+  /* Animations */
+  @keyframes visitedAnimation {
+    0% {
+      transform: scale(0.3);
+      background-color: #1a1a1a;
+      border-radius: 50%;
+    }
+    50% {
+      background-color: #3700ff;
+    }
+    75% {
+      transform: scale(1.2);
+      background-color: #0011ff;
+    }
+    100% {
+      transform: scale(1);
+      background-color: #1900ff;
+    }
+  }
+  
+  @keyframes pathAnimation {
+    0% {
+      transform: scale(0.6);
+      background-color: #ffff00;
+    }
+    50% {
+      transform: scale(1.2);
+      background-color: #ffff00;
+    }
+    100% {
+      transform: scale(1);
+      background-color: #ffff00;
+    }
+  }
+  
+  .animate-visited {
+    animation: visitedAnimation 0.5s ease-out forwards;
+    
+  }
+  
+  .animate-path {
+    animation: pathAnimation 0.5s ease-out forwards;
+  }
+
+  /* alternate animation for .animate-visited  with same color*/
+  
