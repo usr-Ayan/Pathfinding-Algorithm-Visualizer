@@ -19,6 +19,8 @@
   
   /* Animations */
   @keyframes visitedAnimation {
+    
+    
     0% {
       transform: scale(0.3);
       background-color: #1a1a1a;
@@ -26,15 +28,19 @@
     }
     50% {
       background-color: #3700ff;
+      border-radius: 50%;
     }
     75% {
       transform: scale(1.2);
       background-color: #0011ff;
+      border-radius: 50%;
     }
     100% {
       transform: scale(1);
       background-color: #1900ff;
-    }
+    } 
+     
+    
   }
   
   @keyframes pathAnimation {
